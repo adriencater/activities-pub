@@ -1,0 +1,78 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - Import  - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@import url("reset.css");
+@import url("utility.css");
+@import url("type-scale.css");
+@import url("layout.css");
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - Typography  - - - - - - - - - - - - - - - - - - - - - - - */
+
+body{
+	font-family: system-ui, sans-serif;	
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, blockquote {
+	margin-block-end: 0.5em;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - Color - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+:root{
+
+	--mainColor: #F1357A;
+	/* https://activitypub.rocks → #f1007e */
+
+	--mainColorH: 338;
+	--mainColorS: 87%;
+	--mainColorL: 58%;
+
+	--mainColor: hsl( var(--mainColorH), var(--mainColorS), var(--mainColorL) );
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--mainColor)
+}
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - Modules - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* lists */
+ul{
+	padding: 0;
+	list-style-position: outside;
+	margin-top: 0.5rem;;
+	margin-bottom: 1.5rem;
+}
+li{
+	margin-bottom: 0.5em;
+}
+li::marker {
+	color: var(--mainColor);
+}
+ul ul {
+	margin-left: 1rem;
+	list-style-type: disc;
+}
+ul ul li::marker {
+	font-size: 0.85em;
+}
+
+
+/* tags */
+span.tag {
+	font-weight: inherit;
+	& em {
+		font-style: normal;
+		font-weight: 100;
+		margin-inline-end: 0.1em;
+	}
+}

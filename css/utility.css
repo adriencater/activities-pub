@@ -1,0 +1,17 @@
+/* columns */
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+.row > * { 
+	flex: 1;
+}
+tr.row { display: table-row; }
+
+@media(max-width:720px){
+	.row{
+		flex-direction: column;
+	}
+}
+

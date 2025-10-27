@@ -1,0 +1,135 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - FONT SIZE - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - font size variables (for use in CSS) - - */
+:root{
+	/* copy-pasted from console. TO-DO: automate this…  */
+	 --size5: clamp(	5.10rem,	4.80vw + 3.30rem,	6.90rem	);	/*	81.60px		96px	110.40px	*/
+	 --size4: clamp(	3.83rem,	3.60vw + 2.48rem,	5.17rem	);	/*	61.20px		72px	 82.80px	*/
+	 --size3: clamp(	2.55rem,	2.40vw + 1.65rem,	3.45rem	);	/*	40.80px		48px	 55.20px	*/
+	 --size2: clamp(	1.91rem,	1.80vw + 1.24rem,	2.59rem	);	/*	30.60px		36px	 41.40px	*/
+	 --size1: clamp(	1.27rem,	1.20vw + 0.82rem,	1.73rem	);	/*	20.40px		24px	 27.60px	*/
+	 --size0: clamp(	0.96rem,	0.90vw + 0.62rem,	1.29rem	);	/*	15.30px		18px	 20.70px	*/
+	--size-1: clamp(	0.85rem,	0.80vw + 0.55rem,	1.15rem	);	/*	13.60px		16px	 18.40px	*/
+	--size-2: clamp(	0.74rem,	0.70vw + 0.48rem,	1.01rem	);	/*	11.90px		14px	 16.10px	*/
+	--size-3: clamp(	0.64rem,	0.60vw + 0.41rem,	0.86rem	);	/*	10.20px		12px	 13.80px	*/
+	--size-4: clamp(	0.53rem,	0.50vw + 0.34rem,	0.72rem	);	/*	 8.50px		10px	 11.50px	*/
+	
+	/* Aliases */
+	--sizeX4L: var(--size5);
+	--sizeX3L: var(--size4);
+	--sizeXXL: var(--size3);
+	--sizeXL: var(--size2);
+	--sizeL: var(--size1);
+	--sizeM: var(--size0);
+	--sizeS: var(--size-1);
+	--sizeXS: var(--size-2);
+	--sizeXXS: var(--size-3);
+	--sizeX3S: var(--size-4);
+
+	--sizeXXXXL: var(--size5);
+	--sizeXXXL: var(--size4);
+	--sizeXXL: var(--size3);
+	--sizeXL: var(--size2);
+	--sizeL: var(--size1);
+	--sizeM: var(--size0);
+	--sizeS: var(--size-1);
+	--sizeXS: var(--size-2);
+	--sizeXXS: var(--size-3);
+	--sizeXXXS: var(--size-4);
+}
+/* - - end font size variables - - */
+
+
+
+
+/* - - font size classes (for use in HTML) - - */
+ .size5,  .size5 *,  .sizeX4L, .sizeX4L *,  .sizeXXXXL, .sizeXXXXL * { font-size: var(--size5);  }
+ .size4,  .size4 *,  .sizeX3L, .sizeX3L *,   .sizeXXXL,  .sizeXXXL * { font-size: var(--size4);  }
+ .size3,  .size3 *,  .sizeXXL, .sizeXXL *,    .sizeXXL,   .sizeXXL * { font-size: var(--size3);  }
+ .size2,  .size2 *,   .sizeXL,  .sizeXL *,     .sizeXL,    .sizeXL * { font-size: var(--size2);  }
+ .size1,  .size1 *,    .sizeL,   .sizeL *,      .sizeL,     .sizeL * { font-size: var(--size1);  }
+ .size0,  .size0 *,    .sizeM,   .sizeM *,      .sizeM,     .sizeM * { font-size: var(--size0);  }
+.size-1, .size-1 *,    .sizeS,   .sizeS *,      .sizeS,     .sizeS * { font-size: var(--size-1); }
+.size-2, .size-2 *,   .sizeXS,  .sizeXS *,     .sizeXS,    .sizeXS * { font-size: var(--size-2); }
+.size-3, .size-3 *,  .sizeXXS, .sizeXXS *,    .sizeXXS,   .sizeXXS * { font-size: var(--size-3); }
+.size-4, .size-4 *,  .sizeX3S, .sizeX3S *,   .sizeXXXS,  .sizeXXXS * { font-size: var(--size-4); }
+
+
+
+
+/* - - - - - - - - - -  */
+
+h1.plusPlus { font-size: var(--size5); }
+h1.plus { font-size: var(--size4); }
+h1 { font-size: var(--size3); }
+h2 { font-size: var(--size2); }
+h3 { font-size: var(--size1); }
+
+h4		{ font-size: var(--size0); }
+body, p	{ font-size: var(--size0); }
+
+small, 
+.small	{ font-size: var(--size-1); }
+h5		{ font-size: var(--size-1); }
+
+small small, 
+.xsmall	{ font-size: var(--size-2); }
+h6		{ font-size: var(--size-2); }
+
+small small small, 
+.xxsmall	{ font-size: var(--size-3); }
+
+small small small small, 
+.xxxsmall	{ font-size: var(--size-4); }
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - FONT WEIGHT - - - - - - - - - - - - - - - - - - - - - - */
+
+body, p { font-weight: 400; } /* 300 if not variable. */
+
+h1.plusPlus { font-weight: 100; }
+h1.plus { font-weight: 200; }
+h1 { font-weight: 300; }
+h2 { font-weight: 400; }
+h3, h4, h5 { font-weight: 600; }
+h6 { font-weight: 700; }
+
+b, strong { font-weight: 600; }
+
+small, .xsmall { font-weight: 400; }
+.xxsmall, .xxxsmall { font-weight: 450; }
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - FONT STYLE - - - - - - - - - - - - - - - - - - - - - - */
+i, em { font-style: italic; }
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - LETTER SPACING  - - - - - - - - - - - - - - - - - - - - */
+
+h1, h2 { letter-spacing: -0.020em; }
+h5, h6, .small, .xsmall { letter-spacing: 0.015em; }
+.xxsmall, .xxxsmall { letter-spacing: 0.030em; }
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - LINE HEIGHT - - - - - - - - - - - - - - - - - - - - - - */
+
+body, p { line-height: 1.4; }
+h1, h2, h3 { line-height: 1; }
+
+ .size5,  .size5 *,  .sizeX4L, .sizeX4L *,  .sizeXXXXL, .sizeXXXXL * { line-height: 0.85; }
+ .size4,  .size4 *,  .sizeX3L, .sizeX3L *,   .sizeXXXL,  .sizeXXXL * { line-height: 0.85; }
+ .size3,  .size3 *,  .sizeXXL, .sizeXXL *,    .sizeXXL,   .sizeXXL * { line-height: 0.85; }
+
