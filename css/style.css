@@ -76,3 +76,11 @@ span.tag {
 		margin-inline-end: 0.1em;
 	}
 }
+
+/* sections */
+
+section{ 
+	border-top: 1px solid var(--mainColor);
+	margin-bottom: 8rem;
+	padding-top: 0.5rem;
+}
